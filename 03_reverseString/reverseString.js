@@ -6,8 +6,12 @@ const reverseString = function(str) {
     // reverse array
     let rev = makeArray.reverse();
     // change to string
-    let revStr = rev.toString();
-    return revStr;
+    let len = rev.length;
+    let revStr = "";
+    for (let i = 0; i < len; i++) {
+        revStr += rev[i];
+    }
+return revStr;
 };
 
 // Do not edit below this line
