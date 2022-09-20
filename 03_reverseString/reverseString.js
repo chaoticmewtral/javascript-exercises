@@ -13,6 +13,7 @@ const reverseString = function(str) {
     }
 return revStr;
 };
+// pass first test
 
 // Do not edit below this line
 module.exports = reverseString;
