@@ -5,6 +5,8 @@
 let rmv;
 let givenArray;
 
+
+
 // assign input variables to function
 const removeFromArray = function(givenArray, rmv) {
    
