@@ -1,7 +1,7 @@
 let arr;
 let rem;
 
-const removeFromArray = function() {
+const removeFromArray = function(arr, rem) {
 
 };
 
