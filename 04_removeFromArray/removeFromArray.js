@@ -1,3 +1,6 @@
+let arr;
+let rem;
+
 const removeFromArray = function() {
 
 };
