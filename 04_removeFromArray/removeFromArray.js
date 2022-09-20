@@ -1,11 +1,13 @@
+// create a function that compares the given value (rmv) to each array item
+// convert array to string?
 
+// declare input variables
+let rmv;
+let givenArray;
 
-const removeFromArray = function() {
+// assign input variables to function
+const removeFromArray = function(givenArray, rmv) {
    
 }
-
-// function myFunction() {
-//     let newArray = firstArray.filter(removeFromArray);
-// }
 // Do not edit below this line
 module.exports = removeFromArray;
