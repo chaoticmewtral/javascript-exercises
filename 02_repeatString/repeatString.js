@@ -1,7 +1,7 @@
 const repeatString = function(string, num) {
 let i = num;
 let str = "";
-while (i) {
+for (; i > 0; ) {
     if (i < 0) {
         str = 'ERROR';
     }  else {
