@@ -1,4 +1,4 @@
-const removeFromArray = function(arr, rmv) {
+const removeFromArray = function() {
 
 }
 
