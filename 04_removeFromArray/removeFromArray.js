@@ -5,12 +5,9 @@ const removeFromArray = function() {
         let val = arguments[i];
         newArr = arr.filter(comp);
 
-        function comp(val) {
-            if (arr.includes(val)) {
-                continue;
-            } else {
-                return val;
-            }
+        function comp(itm) {
+            if (itm !== val) {
+                return itm;
         }
         return newArr;
     }
