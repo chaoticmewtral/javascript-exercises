@@ -2,14 +2,13 @@
 // convert array to string?
 
 // declare input variables
-let rmv;
-let givenArray;
-
-
+let value;
+let arr;
 
 // assign input variables to function
-const removeFromArray = function(givenArray, rmv) {
-   
-}
+const removeFromArray = function(arr, value) {
+   let index = arr.indexOf(value);
+   arr.splice(index);
+   }
 // Do not edit below this line
 module.exports = removeFromArray;
