@@ -3,13 +3,14 @@ const removeFromArray = function() {
     let newArr = [];
     for (let i = 1; i < arguments.length; i++) {
         let val = arguments[i];
-        newArr = arr.push(arr.filter(comp));
+        let itm = arr[""];
 
         function comp(itm) {
             if (itm !== val) {
                 return itm;
             }
         }
+        newArr.push(comp);
     }
     return newArr;
 }
