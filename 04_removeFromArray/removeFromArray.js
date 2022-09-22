@@ -1,7 +1,7 @@
 const removeFromArray = function() {
     let arr = arguments[0]; // given array
     let newArr = [];
-    for (let i = 1; i < arguments.length; i++) {
+    for (let i = 1; i < (arguments.length - 1); i++) {
         let val = arguments[i];
         let itm = arr[""];
 
@@ -10,7 +10,7 @@ const removeFromArray = function() {
                 return itm;
             }
         }
-        newArr.push(comp);
+        newArr.push(comp());
     }
     return newArr;
 }
