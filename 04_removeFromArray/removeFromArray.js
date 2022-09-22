@@ -9,6 +9,7 @@ let arr;
 const removeFromArray = function(arr, value) {
    let index = arr.indexOf(value);
    arr.splice(index);
+   return arr;
    }
 // Do not edit below this line
 module.exports = removeFromArray;
