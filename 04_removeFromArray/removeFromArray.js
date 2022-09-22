@@ -2,8 +2,9 @@ const removeFromArray = function() {
     let arr = arguments[0]; // given array
     let newArr = [];
     for (let i = 1; i < arguments.length; i++) {
-        if (arr.includes(argument[i])) {
-            newArr.push(arr.splice(arr.indexOf(argument[i]), 1));
+        let val = argument[i];
+        if (arr.includes(value)) {
+            newArr.push(arr.splice(arr.indexOf(val), 1));
         }
         return newArr;
     }
