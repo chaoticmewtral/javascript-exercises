@@ -12,7 +12,7 @@ return sumTotal;
 // Edit for skipped tests
 
 const sumAll = function(...args) {
-    let totalSum;
+    let totalSum = 0;
     
     if ((typeof args[0] !== "number") || (typeof args[1] !== "number")) {
         totalSum = "ERROR";
