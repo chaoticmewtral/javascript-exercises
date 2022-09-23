@@ -18,10 +18,12 @@ const sumAll = function(...args) {
     arr.forEach((arg) => {
         if ((typeof arg === "number") && (arg >= 0)) {
             let start, end;
-            if (arr[0] > arr[1]) {
+            if (arr[0] < arr[1]) {
                 start = arr[0];
+                end = arr[1];
             } else {
                 start = arr[1];
+                end = arr[0];
             }
             for (let i = start; i <= end; i++) {
                 sumTotal += i;
