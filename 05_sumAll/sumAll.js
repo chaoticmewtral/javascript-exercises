@@ -13,7 +13,28 @@ return sumTotal;
 
 const sumAll = function(...args) {
     let totalSum;
+    
+    if ((typeof args[0] !== "number") || (typeof args[1] !== "number")) {
+        totalSum = "ERROR";
+    } else if ((args[0] < 0) || (args[1] < 0)) {
+        totalSum = "ERROR";
+    } else {
+        let start;
+        let end;
 
+        if (args[0] < args[1]) {
+            start = args[0];
+            end = args[1];
+        } else {
+            start = args[1];
+            end = args[0];
+        }
+
+        for (let i = start; i <= end; i++) {
+            totalSum =+ i;
+        }
+    }
+    return totalSum;
 }
 
 
