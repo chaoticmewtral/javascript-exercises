@@ -1,12 +1,8 @@
 const sumAll = function(start, end) {
     let sumTotal = 0;
     for (let i = start; i <= end; i++) {
-        if (start < 0 || end < 0 || start == NaN || end == NaN) {
-            sumTotal = "ERROR";
-        } else {
             sumTotal += i;
-        }
-}
+    }
 return sumTotal;
 };
 
