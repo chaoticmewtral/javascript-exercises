@@ -12,7 +12,24 @@ return sumTotal;
 // Edit for skipped tests
 
 const sumAll = function(...args) {
-    
+    const arr = args;
+    let sumTotal;
+
+    arr.forEach((arg) => {
+        if ((typeof arg === "number") && (arg >= 0)) {
+            let start, end;
+            if (arr[0] > arr[1]) {
+                start = arr[0];
+            } else {
+                start = arr[1];
+            }
+            for (let i = start; i <= end; i++) {
+                sumTotal += i;
+            }
+        } else {
+            sumTotal = "ERROR";
+        }
+    });
     return sumTotal;
 }
 
