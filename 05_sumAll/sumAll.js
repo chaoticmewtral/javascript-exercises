@@ -31,7 +31,7 @@ const sumAll = function(...args) {
         }
 
         for (let i = start; i <= end; i++) {
-            totalSum =+ i;
+            totalSum += i;
         }
     }
     return totalSum;
