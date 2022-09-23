@@ -6,6 +6,8 @@ const ctof = function(c) {
   return (Math.round((((c * (9/5)) + 32)) * 10) / 10);
 };
 
+// pass first test
+
 // Do not edit below this line
 module.exports = {
   ftoc,
