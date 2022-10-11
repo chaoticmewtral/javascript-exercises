@@ -20,11 +20,11 @@ const sum = function(arr) {
 };
 
 const multiply = function(multArr) {
-let multTotal;
-for(let i = 0; i < multArr.length; i++) {
-  multTotal *= multArr[i];
-}
-return multTotal;
+  let multTotal = 1;
+  for(let i = 0; i < multArr.length; i++) {
+    multTotal *= multArr[i];
+  }
+  return multTotal;
 };
 
 const power = function(x, y) {
@@ -32,8 +32,12 @@ const power = function(x, y) {
   return pwrOf;
 };
 
-const factorial = function() {
-	
+const factorial = function(n) {
+	let fact = 1;
+  for(i = 1; i <= n; i++) {
+    fact *= i;
+  }
+  return fact;
 };
 
 // Do not edit below this line
