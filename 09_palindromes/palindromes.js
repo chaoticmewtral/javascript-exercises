@@ -14,9 +14,10 @@ for (let i = 0; i < str.length; i++) {
     }
 }
 
+rev = rev.reverse();
 
-return (rev.reverse() === arr);
+return (rev.toString() === arr.toString());
 }
 
 // Do not edit below this line
-// module.exports = palindromes;
+module.exports = palindromes;
