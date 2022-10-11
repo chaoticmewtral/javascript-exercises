@@ -11,16 +11,25 @@ const subtract = function(a, b) {
   return diff;
 };
 
-const sum = function() {
-	
+const sum = function(arr) {
+	let sum = 0;
+  for(let key in arr) {
+    sum += key;
+  }
+  return sum;
 };
 
-const multiply = function() {
-
+const multiply = function(multArr) {
+let multTotal;
+for(let i = 0; i < multArr.length; i++) {
+  multTotal *= multArr[i];
+}
+return multTotal;
 };
 
-const power = function() {
-	
+const power = function(x, y) {
+	let pwrOf = x ** y;
+  return pwrOf;
 };
 
 const factorial = function() {
