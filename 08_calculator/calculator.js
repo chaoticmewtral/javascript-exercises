@@ -14,8 +14,8 @@ const subtract = function(a, b) {
 const sum = function(arr) {
 let arrSum = 0;
 
-for(let num in arr) {
-  arrSum += num;
+for(let num of arr) { // of, not in
+  arrSum = arrSum + num;
 }
 return arrSum;
 };
