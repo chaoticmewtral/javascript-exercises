@@ -1,6 +1,7 @@
-const palindromes = function (str) {
+const palindromes = function (initStr) {
 // get charCodeAt each character in str using loop
 let arr = [];
+let str = initStr.toLowerCase();
 
 for (let i = 0; i < str.length; i++) {
     let code = str.charCodeAt(i);
