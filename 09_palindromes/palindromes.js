@@ -11,7 +11,7 @@ for (let i = 0; i < str.length; i++) {
         arr.push(str.charAt(i));
     }
 }
-return (arr === arr.reverse());
+return (arr.toString() === (arr.reverse()).toString);
 // function to compare if str/arr === rev of str/arr
 };
 
