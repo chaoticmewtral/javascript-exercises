@@ -1,9 +1,14 @@
-const add = function() {
-	
+const add = function(...args) {
+	let total = 0;
+  for (let arg of args) {
+    total += arg;
+  }
+  return total;
 };
 
-const subtract = function() {
-	
+const subtract = function(a, b) {
+	let diff = (a - b);
+  return diff;
 };
 
 const sum = function() {
