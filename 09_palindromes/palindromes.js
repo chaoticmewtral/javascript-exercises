@@ -15,4 +15,4 @@ return (arr === arr.reverse());
 };
 
 // Do not edit below this line
-// module.exports = palindromes;
+module.exports = palindromes;
