@@ -10,9 +10,9 @@ for (let i = 0; i < str.length; i++) {
         arr.push(str.charAt(i));
     }
 }
-    
+return (arr === arr.reverse());
 // function to compare if str/arr === rev of str/arr
 };
 
 // Do not edit below this line
-module.exports = palindromes;
+// module.exports = palindromes;
