@@ -12,11 +12,15 @@ const subtract = function(a, b) {
 };
 
 const sum = function(arr) {
+
+  if (arr === []) {
+    return 0;
+  } else {
   const totalSum = arr.reduce(sumFunc);
 
   function sumFunc(total, value) {
     return total + value;
-  }
+  }}
   return totalSum;
 };
 
