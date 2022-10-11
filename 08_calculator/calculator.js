@@ -12,7 +12,11 @@ const subtract = function(a, b) {
 };
 
 const sum = function(arr) {
+  const totalSum = arr.reduce(sumFunc);
 
+  function sumFunc(total, value) {
+    return total + value;
+  }
 };
 
 const multiply = function(multArr) {
