@@ -17,6 +17,7 @@ const sum = function(arr) {
   function sumFunc(total, value) {
     return total + value;
   }
+  return totalSum;
 };
 
 const multiply = function(multArr) {
