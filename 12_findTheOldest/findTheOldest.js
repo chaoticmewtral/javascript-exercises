@@ -16,7 +16,7 @@
 //     },
 //   ];
   
-  const findTheOldest = function() {
+  const findTheOldest = function(people) {
 
     const oldest = people.reduce((acc, person) => {
         for (let person of people) {
