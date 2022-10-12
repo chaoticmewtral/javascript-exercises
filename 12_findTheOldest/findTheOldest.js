@@ -16,25 +16,13 @@ const people = [
   ]
 
 const findTheOldest = function() {
-    for (let person in people) {
+    for (let person of people) {
         if (!'yearOfDeath' in person) {
             person.yearOfDeath = 2022;
         }
-}
-
+    const age = person.yearOfDeath - person.yearOfBirth;
+    }
     const oldest = people.reduce((acc, person) => {
-        
-        console.log(acc, person);
-
-        
-
-        console.log(person);
-
-        const age = person.yearOfDeath - person.yearOfDeath;
-        person.age = age;
-
-        console.log(person, age);
-
         if (acc === null || person.age < acc.age) {
             return person;
         } else {
