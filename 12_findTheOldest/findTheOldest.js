@@ -1,32 +1,31 @@
-// const people = [
-//     {
-//       name: "Carly",
-//       yearOfBirth: 1942,
-//       yearOfDeath: 1970,
-//     },
-//     {
-//       name: "Ray",
-//       yearOfBirth: 1962,
-//       yearOfDeath: 2011,
-//     },
-//     {
-//       name: "Jane",
-//       yearOfBirth: 1912,
-//       yearOfDeath: 1941,
-//     },
-//   ];
+const people = [
+    {
+      name: "Carly",
+      yearOfBirth: 2018,
+    },
+    {
+      name: "Ray",
+      yearOfBirth: 1962,
+      yearOfDeath: 2011,
+    },
+    {
+      name: "Jane",
+      yearOfBirth: 1912,
+      yearOfDeath: 1941,
+    },
+  ]
   
-  const findTheOldest = function(people) {
-
+  const findTheOldest = function() {
+    for (let person of people) {
+        if (!'yearOfDeath' in person) {
+            let year = new Date().getFullYear;
+            person["yearOfDeath"] = year;
+        }
+    }
     const oldest = people.reduce((acc, person) => {
-        for (let person of people) {
-            if (!'yearOfDeath' in person) {
-                person["yearOfDeath"] = 2022;
-            }
-            
+        console.log(person.yearOfDeath);
         const age = person.yearOfDeath - person.yearOfBirth;
         person["age"] = age;
-        }
         if (acc === null || person.age > acc.age) {
             return person;
         }
@@ -38,4 +37,4 @@ return oldest;
 // passed first test above this line
 
 // Do not edit below this line
-module.exports = findTheOldest;
+// module.exports = findTheOldest;
