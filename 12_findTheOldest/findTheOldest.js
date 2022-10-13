@@ -21,7 +21,7 @@
     const oldest = people.reduce((acc, person) => {
         for (let person of people) {
             if (!'yearOfDeath' in person) {
-                person.yearOfDeath = 2022;
+                person["yearOfDeath"] = 2022;
             }
             
         const age = person.yearOfDeath - person.yearOfBirth;
