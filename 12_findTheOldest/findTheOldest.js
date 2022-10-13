@@ -25,7 +25,7 @@
             }
             
         const age = person.yearOfDeath - person.yearOfBirth;
-        person.age = age;
+        person["age"] = age;
         }
         if (acc === null || person.age > acc.age) {
             return person;
