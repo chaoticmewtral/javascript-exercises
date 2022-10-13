@@ -15,7 +15,7 @@
 //     },
 //   ]
   
-  const findTheOldest = function() {
+  const findTheOldest = function(people) {
     let currentYear = 2022;
     
     for (let i = 0; i < people.length; i++) {
